@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Monomakh", serif;   
 }
 
+hr {
+    border: 1px solid #9266cc;
+}
+
 p {
     font-family: "Quicksand", serif;
 }
@@ -173,6 +177,8 @@ button:hover {
     justify-content: space-between;
     gap: 100px;
     margin-top: 50px;
+    border-radius: 20px;
+    padding: 0 50px;
 }
 
 .story .ourStory {
@@ -190,6 +196,10 @@ button:hover {
 
 .story:nth-child(3) button{
     background-color: #fff;
+}
+
+.story:nth-child(even){
+    background-color: #cccccc;
 }
 
 .story:nth-child(3) button:hover {
@@ -217,6 +227,10 @@ button:hover {
     height: 100%;
 }
 
+.future {
+    margin-top: 50px;
+}
+
 
 .future .con p {
     font-size: 25px;
@@ -225,9 +239,180 @@ button:hover {
 .future .conimg {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
 }
 
 .future .conimg img {
-    width: 350px;
+    width: 550px;
+    height: 430px;
+    border-radius: 20px;
+    
 }
 
+.testimonials-container {
+    max-width: 800px;
+    margin: 50px auto 100px;
+    padding: 20px;
+    background-color: #9266cc;
+    box-shadow: 0 0 10px rgb(20, 20, 20);
+    margin-top: 100px;
+}
+
+.testimonials-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #4c2283;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.05);
+}
+
+.testimonial blockquote {
+    color: #fff;
+    font-size: 18px;
+    font-style: italic;
+    margin: 0;
+}
+
+.testimonial-author {
+    font-size: 16px;
+    color: #b6b6b6;
+    margin-top: 10px;
+}
+
+/* Optional: Responsive Design */
+/* @media (max-width: 600px) {
+    .testimonials-container {
+        padding: 10px;
+    }
+    .testimonial {
+        padding: 10px;
+    }
+} */
+
+.contact-form-container {
+    margin-top: 50px;
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.contact-form-container h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: #ffffff;
+    border-bottom: 1px solid #341064;
+    outline: none;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+placeholder {
+    color: #470000;
+    font-family: "Monomakh", serif;
+}
+
+/* .contact-form-container button[type="submit"] {
+    border: 2px solid #341064;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}  */
+
+/* .contact-form-container button[type="submit"]:hover {
+    background-color: #;
+} */
+
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-links, .footer-social {
+    margin: 0 20px;
+}
+
+.footer-social a {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.footer-links h3, .footer-social h3 {
+    margin-bottom: 10px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li, .footer-social li {
+    margin-bottom: 5px;
+}
+
+.footer-links a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-social svg {
+    margin-right: 5px;
+}
+
+.footer-copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Optional: Responsive Design */
+/* @media (max-width: 600px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-links, .footer-social {
+        margin: 10px;
+    }
+} */
